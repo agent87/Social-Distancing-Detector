@@ -99,7 +99,7 @@ while cv2.waitKey(1) < 0:
                 text = 'OK'
                 cv2.putText(image, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX,0.5, color, 2)   
     
-    cv2.imshow("Social Distancing Detector", image)
+    #cv2.imshow("Social Distancing Detector", image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     vid_writer.write(image)
